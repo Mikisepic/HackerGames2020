@@ -8,6 +8,7 @@
 
     <title>Socian</title>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- icon -->
     <link rel="icon" href="/static/favicon.ico">
 
@@ -16,7 +17,6 @@
     <script src="/static/js/bootstrap/bootstrap.js"></script>
 
     <!-- JavaScript files -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- <script src="/static/js/jquery.nicescroll.min.js"></script> -->
     <script src="/static/js/common.js"></script>
     <script src="/static/js/parallax.min.js"></script>
@@ -54,133 +54,53 @@
         </div>
         <div class="list col-7 offset-1">
             <div class="row m-0">
-                <div class="col list-item p-0">
-                    <div class="row m-0 list-data">
-                        <div class="col-12 list-title">Vilniaus Gedimino technikos universitetas</div>
-                    </div>
-                    <div class="row m-0 list-info">
-                        <div class="col-12 list-rating">1st</div>
-                        <div class="col-12 list-country">Lithuania</div>
-                    </div>
-                    <div class="row m-0">
-                        <div class="list-image"><div class="img-bg"></div><img src="/static/images/vgtu.jpg" alt=""></div>
-                    </div>
-                    <div class="more">more_</div>
-                </div>
-                <div class="col list-item p-0">
-                    <div class="row m-0 list-data">
-                        <div class="col-12 list-title">Vilniaus Gedimino technikos universitetas</div>
-                    </div>
-                    <div class="row m-0 list-info">
-                        <div class="col-12 list-rating">1st</div>
-                        <div class="col-12 list-country">Lithuania</div>
-                    </div>
-                    <div class="row m-0">
-                        <div class="list-image"><div class="img-bg"></div><img src="/static/images/vgtu.jpg" alt=""></div>
-                    </div>
-                    <div class="more">more_</div>
-                </div>
-                <div class="col list-item p-0">
-                    <div class="row m-0 list-data">
-                        <div class="col-12 list-title">Vilniaus Gedimino technikos universitetas</div>
-                    </div>
-                    <div class="row m-0 list-info">
-                        <div class="col-12 list-rating">1st</div>
-                        <div class="col-12 list-country">Lithuania</div>
-                    </div>
-                    <div class="row m-0">
-                        <div class="list-image"><div class="img-bg"></div><img src="/static/images/vgtu.jpg" alt=""></div>
-                    </div>
-                    <div class="more">more_</div>
-                </div>
-                <div class="col list-item p-0">
-                    <div class="row m-0 list-data">
-                        <div class="col-12 list-title">Vilniaus Gedimino technikos universitetas</div>
-                    </div>
-                    <div class="row m-0 list-info">
-                        <div class="col-12 list-rating">1st</div>
-                        <div class="col-12 list-country">Lithuania</div>
-                    </div>
-                    <div class="row m-0">
-                        <div class="list-image"><div class="img-bg"></div><img src="/static/images/vgtu.jpg" alt=""></div>
-                    </div>
-                    <div class="more">more_</div>
-                </div>
-                <div class="col list-item p-0">
-                    <div class="row m-0 list-data">
-                        <div class="col-12 list-title">Vilniaus Gedimino technikos universitetas</div>
-                    </div>
-                    <div class="row m-0 list-info">
-                        <div class="col-12 list-rating">1st</div>
-                        <div class="col-12 list-country">Lithuania</div>
-                    </div>
-                    <div class="row m-0">
-                        <div class="list-image"><div class="img-bg"></div><img src="/static/images/vgtu.jpg" alt=""></div>
-                    </div>
-                    <div class="more">more_</div>
-                </div>
-                <div class="col list-item p-0">
-                    <div class="row m-0 list-data">
-                        <div class="col-12 list-title">Vilniaus Gedimino technikos universitetas</div>
-                    </div>
-                    <div class="row m-0 list-info">
-                        <div class="col-12 list-rating">1st</div>
-                        <div class="col-12 list-country">Lithuania</div>
-                    </div>
-                    <div class="row m-0">
-                        <div class="list-image"><div class="img-bg"></div><img src="/static/images/vgtu.jpg" alt=""></div>
-                    </div>
-                    <div class="more">more_</div>
-                </div>
-                <div class="col list-item p-0">
-                    <div class="row m-0 list-data">
-                        <div class="col-12 list-title">Vilniaus Gedimino technikos universitetas</div>
-                    </div>
-                    <div class="row m-0 list-info">
-                        <div class="col-12 list-rating">1st</div>
-                        <div class="col-12 list-country">Lithuania</div>
-                    </div>
-                    <div class="row m-0">
-                        <div class="list-image"><div class="img-bg"></div><img src="/static/images/vgtu.jpg" alt=""></div>
-                    </div>
-                    <div class="more">more_</div>
-                </div>
+                {% for d in data %}
+                        <div class="col list-item p-0 " id="{{ d["id"] }}">
+                            <div class="row m-0 list-data">
+                                <div class="col-12 list-title">{{ d["university"] }}</div>
+                            </div>
+                            <div class="row m-0 list-info">
+                                <div class="col-12 list-rating">{{ d["rankingWorldWide"] }}  worldwide</div>
+                                <div class="col-12 list-country">{{ d["city"] }}</div>
+                            </div>
+                            <div class="row m-0">
+                                <div class="list-image"><div class="img-bg"></div><img src="{{ d["image"] }}" alt=""></div>
+                            </div>
+                            <div class="more">more_</div>
+                        </div>
+                {% endfor %}
             </div>
         </div>
     </div>
-        <div class="info-bar">
+    {% for d in data %}
+        <div class="info-bar {{ d["id"] }}" id="{{ d["id"] }}">
             <div class="closebar"></div>
             <div class="row m-0">
-                <div class="title col-8">Vilniaus Gedimino technikos universitetas</div>
+                <div class="title col-8">{{ d["university"] }}</div>
                 <div class="image col-3 p-0"><img src="/static/images/vgtu.jpg" alt=""> </div>
                 
                 <div class="data col-8">
                     <div class="row m-0">
-                        <div class="datacol noselect p-0 col miestas">Vilnius</div>
-                        <div class="datacol noselect p-0 col ratings">4.9/5</div>
-                        <div class="datacol noselect p-0 col country">Lietuva</div>
-                        <div class="datacol noselect p-0 col">col</div>
-                        <div class="datacol noselect p-0 col">m / f</div>
-                        <div class="datacol noselect p-0 col"></div>
+                        <div class="datacol noselect col miestas">{{ d["city"] }}</div>
+                        <div class="datacol noselect col ratings">{{ d["rankingWorldWide"] }}</div>
+                        <div class="datacol noselect col">{{ d["costOfLiving"] }}</div>
+                        <div class="datacol noselect col">{{ d["womenMenRation"] }}</div>
+                        <div class="datacol noselect col">{{ d["languages"] }}</div>
                     </div>
                 </div>
                 <div class="walloffame col-3 p-0">
                     <div class="row m-0">
                         <div class="col-12 walltit">Wall of fame</div>
-                        <div class="col-12 person">
-                            <div class="name"><strong>Boleslav Aleksandr</strong> Petkevic </div>
-                        </div>
-                        <div class="col-12 person">
-                            <div class="name"><strong>Mikas</strong> Pupeikis</div>
-                        </div>
-                        <div class="col-12 person">
-                            <div class="name"><strong>Gabriel</strong> Masalski</div>
-                        </div>
+                        {% for i in d["wallOfFame"] %}
+                            <div class="col-12 person">
+                                <div class="name"><strong>{{ i }}</strong> </div>
+                            </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
-            <div class="web"><a href="#">go to official website</a></div>
         </div>
+    {% endfor %}
 
 
 

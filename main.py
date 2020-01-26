@@ -4,9 +4,9 @@ import json
 app = Flask(__name__)
 
 
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/")
 def index():
-    with open('universities.json', 'r') as universities:
+    with open('universities.json', 'r', encoding="utf8") as universities:
         data = json.load(universities)
         return render_template('index.html', data=data)
 
