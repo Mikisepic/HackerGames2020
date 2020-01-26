@@ -77,11 +77,22 @@
                 
                 <div class="data col-8">
                     <div class="row m-0 datalist">
-                        <div class="datacol noselect  miestas">{{ d["city"] }}</div>
-                        <div class="datacol noselect  ratings">{{ d["rankingWorldWide"] }}</div>
-                        <div class="datacol noselect ">{{ d["costOfLiving"] }}</div>
-                        <div class="datacol noselect ">{{ d["womenMenRation"] }}</div>
-                        <div class="datacol noselect ">{{ d["languages"] }}</div>
+                        <div class="datacol noselect  miestas" title="City">{{ d["city"] }}</div>
+                        <div class="datacol noselect  ratings" title="Ranking Worldwide">{{ d["rankingWorldWide"] }}</div>
+                        <div class="datacol noselect " title="Cost of living">{{ d["costOfLiving"] }}</div>
+                        <div class="datacol noselect " title="Women/Man Ratio">{{ d["womenMenRation"] }}</div>
+                        <div class="datacol noselect " title="Languages">{{ d["languages"] }}</div>
+                        <div class="datacol noselect" title="Life Science">{{ d["subjectRanking"]["lifeScience"] }}</div>
+                        <div class="datacol noselect " title="Arts And Humanities">{{ d["subjectRanking"]["artsAndHumanities"] }}</div>
+                        <div class="datacol noselect " title="Engineering And Science">{{ d["subjectRanking"]["engineeringAndScience"] }}</div>
+                        <div class="datacol noselect " title="Physical Science">{{ d["subjectRanking"]["physicalSciene"] }}</div>
+                        <div class="datacol noselect " title="Social Science">{{ d["subjectRanking"]["socialScience"] }}</div>
+                        <div class="datacol noselect " title="Bussiness Economy">{{ d["subjectRanking"]["bussinessEconomy"] }}</div>
+                        <div class="datacol noselect " title="Computer Science">{{ d["subjectRanking"]["computerScience"] }}</div>
+                        <div class="datacol noselect " title="Law">{{ d["subjectRanking"]["law"] }}</div>
+                        <div class="datacol noselect " title="Education">{{ d["subjectRanking"]["education"] }}</div>
+                        <div class="datacol noselect " title="Psychology">{{ d["subjectRanking"]["psychology"] }}</div>
+                        <div class="datacol noselect " title="Clinical Preclinical Health">{{ d["subjectRanking"]["clinicalPreclinicalHealth"] }}</div>
                     </div>
                 </div>
                 <div class="walloffame col-3 p-0">

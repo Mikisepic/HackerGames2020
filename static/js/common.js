@@ -1,6 +1,8 @@
 $(document).ready(function() {
 
 
+	$("*").addClass("noselect");
+
 	$(".list-item").click(function() {
 
 		id = $(this).attr('id');
