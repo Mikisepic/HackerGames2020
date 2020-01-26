@@ -2,33 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c7f9bf9-5864-490f-b576-506fa72e31bd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Project Blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Project Blog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/LifeBlog.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/styles/game.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/styles/story.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/styles/success.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/Draknor red scale style@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/Group 6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/about-line-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/about-line-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/avatar-image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/bg-image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/computer.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/goal-image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/lifeblog.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/lifeblogwhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/lifestory.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/lifestorywhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/programming-code.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/scroll.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/search.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/vectorpaint (3).svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            <state relative-caret-position="322">
+              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
               <folding>
                 <element signature="e#0#83#0" expanded="true" />
               </folding>
@@ -62,7 +39,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
+            <state relative-caret-position="1219">
               <caret line="53" column="69" selection-start-line="53" selection-start-column="69" selection-end-line="53" selection-end-column="69" />
             </state>
           </provider>
@@ -100,10 +77,10 @@
         <option value="$PROJECT_DIR$/static/js/common.js" />
         <option value="$PROJECT_DIR$/templates/gamelog.html" />
         <option value="$PROJECT_DIR$/models.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/static/css/styles/main.css" />
         <option value="$PROJECT_DIR$/universities.json" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -156,7 +133,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Lifestory interpreter" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Lifestory interpreter/Scripts" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -223,8 +200,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35607675" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12100213" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -233,10 +211,10 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3296582" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" visible="true" weight="0.3296582" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3296582" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.44871795" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.3296582" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3296582" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -256,10 +234,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/gamelog.html" />
     <entry file="file://$PROJECT_DIR$/models.py" />
-    <entry file="file://$PROJECT_DIR$/templates/jinjaindex.html">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="28" />
+        <state relative-caret-position="1219">
+          <caret line="53" column="69" selection-start-line="53" selection-start-column="69" selection-end-line="53" selection-end-column="69" />
         </state>
       </provider>
     </entry>
@@ -277,17 +255,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/templates/jinjaindex.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="53" column="69" selection-start-line="53" selection-start-column="69" selection-end-line="53" selection-end-column="69" />
+        <state relative-caret-position="299">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        <state relative-caret-position="322">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
           <folding>
             <element signature="e#0#83#0" expanded="true" />
           </folding>
