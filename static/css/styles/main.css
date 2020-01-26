@@ -145,10 +145,16 @@ html {
     line-height: 20px;
 }
 
+.datalist {
+    overflow-y: scroll;
+    max-height: 60vh; 
+}
+
 .datacol {
     margin-top: 10px;
     min-height: 100px;
     min-width: 75px;
+    padding: 0 20px;
     margin: 10px;
     background-color: #4f4f4f;
     color: #DED7CE;
