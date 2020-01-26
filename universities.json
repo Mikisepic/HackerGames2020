@@ -1,0 +1,164 @@
+[
+    {
+        "university": "University of Copenhagen",
+        "city": "Copenhagen",
+        "womenMenRation": "57:43",
+        "learningDuration": 3,
+        "tuitionFeePerYear": 0,
+        "costOfLiving": 95.96,
+        "isHigher": "Higher",
+        "amountOfInternationalStudents": 17,
+        "wallOfFame": ["Høgni Reistrup", "Eskild Ebbesen", "Marie-Louise Nosch"],
+        "rankingWorldWide": 101,
+        "subjectRanking": {
+            "lifeScience": 41,
+            "artsAndHumanities": 76,
+            "engineeringAndScience": "-",
+            "physicalSciene": 88,
+            "socialScience": 57,
+            "bussinessEconomy": "-",
+            "computerScience": "-",
+            "law": 47,
+            "education": "-",
+            "psychology": "-",
+            "clinicalPreclinicalHealth": 80
+        },
+        "languages": "English"
+    },
+
+    {
+        "university": "University of Ljubljana",
+        "city": "Ljubljana",
+        "womenManRation": "60:40",
+        "learningDuration": 3,
+        "tuitionFeePerYear": 2600,
+        "costOfLiving": 23.49,
+        "isHigher": "Higher",
+        "amountOfInternationalStudents": 6,
+        "wallOfFame": ["Slavoj Žižek", "", ""],
+        "rankingWorldWide": "601-800",
+        "subjectRanking": {
+            "lifeScience": "501-600",
+            "artsAndHumanities": "400+",
+            "engineeringAndScience": "601-800",
+            "physicalSciene": "601-800",
+            "socialScience": "501-600",
+            "bussinessEconomy": "401-500",
+            "computerScience": "401-500",
+            "law": "151+",
+            "education": "401+",
+            "psychology": "401+",
+            "clinicalPreclinicalHealth": "501-600"
+        },
+        "languages": "English"
+    },
+
+    {
+        "university": "Autonomous University of Madrid",
+        "city": "Madrid",
+        "womenMenRation": "61:39",
+        "learningDuration": 4,
+        "tuitionFeePerYear": 1283,
+        "costOfLiving": 31.62,
+        "isHigher": "Higher",
+        "amountOfInternationalStudents": 14,
+        "wallOfFame": ["Lorena Berdún", "Pepe Viyuela", "Carlos Bardem"],
+        "rankingWorldWide": "251-300",
+        "subjectRanking": {
+            "lifeScience": "251-300",
+            "artsAndHumanities": "201-250",
+            "engineeringAndScience": "401-500",
+            "physicalSciene": "251-300",
+            "socialScience": "201-250",
+            "bussinessEconomy": "301-400",
+            "computerScience": "401-500",
+            "law": "151+",
+            "education": "101-125",
+            "psychology": "201-250",
+            "clinicalPreclinicalHealth": "151-175"
+        },
+        "languages": "English"
+    },
+
+    {
+        "university": "Stockholm University",
+        "city": "Stockholm",
+        "womenMenRation": "62:38",
+        "learningDuration": 3,
+        "tuitionFeePerYear": 0,
+        "costOfLiving": 71.73,
+        "isHigher": "Higher",
+        "amountOfInternationalStudents": 27,
+        "wallOfFame": ["Svante Arrhenius", "Hans von Euler-Chelpin", "George de Hevesy"],
+        "rankingWorldWide": 175,
+        "subjectRanking": {
+            "lifeScience": 79,
+            "artsAndHumanities": "101-125",
+            "engineeringAndScience": "-",
+            "physicalSciene": 96,
+            "socialScience": 88,
+            "bussinessEconomy": "126-150",
+            "computerScience": "201-250",
+            "law": "101-125",
+            "education": "126-150",
+            "psychology": "101-125",
+            "clinicalPreclinicalHealth": "-"
+        },
+        "languages": "English"
+    },
+
+    {
+        "university": "University of Vienna",
+        "city": "Vienna",
+        "womenMenRation": "66:34",
+        "learningDuration": 4,
+        "tuitionFeePerYear": 5000,
+        "costOfLiving": 48.35,
+        "isHigher": "Higher",
+        "amountOfInternationalStudents": 27,
+        "wallOfFame": ["Robert Bárány", "Richard Adolf Zsigmondy", "Julius Wagner-Jauregg"],
+        "rankingWorldWide": 134,
+        "subjectRanking": {
+            "lifeScience": 84,
+            "artsAndHumanities": 30,
+            "engineeringAndScience": "-",
+            "physicalSciene": "101-125",
+            "socialScience": 86,
+            "bussinessEconomy": 76,
+            "computerScience": "251-300",
+            "law": 68,
+            "education": "176-200",
+            "psychology": 70,
+            "clinicalPreclinicalHealth": "-"
+        },
+        "languages": "English"
+    },
+
+    {
+        "university": "Riga Stradiņš University",
+        "city": "Riga",
+        "womenMenRation": "57:43",
+        "learningDuration": 4,
+        "tuitionFeePerYear": 2470,
+        "costOfLiving": 11.68,
+        "isHigher": "Higher",
+        "amountOfInternationalStudents": "-",
+        "wallOfFame": ["Ingrīda Circene", "Gundars Daudze", "Valdis Zatlers"],
+        "rankingWorldWide": "301+",
+        "subjectRanking": {
+            "lifeScience": "-",
+            "artsAndHumanities": "-",
+            "engineeringAndScience": "-",
+            "physicalSciene": "-",
+            "socialScience": "-",
+            "bussinessEconomy": "-",
+            "computerScience": "-",
+            "law": "-",
+            "education": "-",
+            "psychology": "-",
+            "clinicalPreclinicalHealth": "-"
+        },
+        "languages": "English"
+    }
+
+]

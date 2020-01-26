@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Socian</title>
+</head>
+<body>
+    {% for d in data %}
+        {% for i in d %}
+
+            {% if i == "wallOfFame" %}
+                <div>{{ d[i][0] }}</div>
+                <div>{{ d[i][1] }}</div>
+                <div>{{ d[i][2] }}</div>
+            {% else %}
+                <div> {{ i }} : {{ d[i] }} </div>
+            {% endif %}
+
+            {% if i == "subjectRanking" %}
+                <div> Life Science {{ d[i]["lifeScience"] }} </div>
+                <div> Arts And Humanities {{ d[i]["artsAndHumanities"] }} </div>
+                <div> Engineering And Science {{ d[i]["engineeringAndScience"] }} </div>
+                <div> Physical Sciene {{ d[i]["physicalSciene"] }} </div>
+                <div> Social Science {{ d[i]["socialScience"] }} </div>
+                <div> Bussiness Economy {{ d[i]["bussinessEconomy"] }} </div>
+                <div> Computer Science {{ d[i]["computerScience"] }} </div>
+                <div> Law {{ d[i]["law"] }} </div>
+                <div> Education {{ d[i]["education"] }} </div>
+                <div> Psychology {{ d[i]["psychology"] }} </div>
+                <div> Clinical, Preclinical Health {{ d[i]["clinicalPreclinicalHealth"] }} </div>
+            {% endif %}
+
+            {% if i == "isHigher" %}
+                <div>Cost of Living index in {{ d.city }} is {{ d["costOfLiving"] }}% {{ d["isHigher"] }} than in Vilnius  </div>
+            {% endif %}
+
+            <br>
+
+        {% endfor %}
+    {% endfor %}
+</body>
+</html>
