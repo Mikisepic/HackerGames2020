@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Socian</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- icon -->
+    <link rel="icon" href="/static/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link href="/static/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <script src="/static/js/bootstrap/bootstrap.js"></script>
+
+    <!-- JavaScript files -->
+    <!-- <script src="/static/js/jquery.nicescroll.min.js"></script> -->
+    <script src="/static/js/common.js"></script>
+    <script src="/static/js/parallax.min.js"></script>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="/static/css/styles/main.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar row p-0 m-0">
+        <div class="logo p-0"><img src="/static/images/socian.png" alt="Logo"></div>
+    </div>
+
+    <!-- Desktop version -->
+    <div class="content row m-0">
+        <div class="sidebar col-2 ">
+            <div class="sidetit">Filters</div>
+            <div class="row m-0">
+                <div class="sidebar-item col-11">Women Man Ratio</div>
+                <div class="sidebar-item col-11">Cost Of Living</div>
+                <div class="sidebar-item col-11">Ranking Worldwide</div>
+                <div class="sidebar-item col-11">Language</div>
+            </div>
+        </div>
+        <div class="list col-7 offset-1">
+            <div class="row m-0">
+                {% for d in data %}
+                <div class="col list-item p-0 " id="{{ d['id'] }}">
+                    <div class="row m-0 list-data">
+                        <div class="col-12 list-title">{{ d["university"] }}</div>
+                    </div>
+                    <div class="row m-0 list-info">
+                        <div class="col-12 list-rating">{{ d["rankingWorldWide"] }} worldwide</div>
+                        <div class="col-12 list-country">{{ d["city"] }}</div>
+                    </div>
+                    <div class="row m-0">
+                        <div class="list-image">
+                            <div class="img-bg"></div><img src="{{ d[' image '] }}" alt=""></div>
+                    </div>
+                    <div class="more">more_</div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% for d in data %}
+    <div class="info-bar {{ d['id'] }}" id="{{ d['id'] }}">
+        <div class="closebar"></div>
+        <div class="row m-0">
+            <div class="title col-8">{{ d["university"] }}</div>
+            <div class="image col-3 p-0"><img src="{{ d['image'] }}" alt=""> </div>
+
+            <div class="data col-8">
+                <div class="row m-0 datalist">
+                    <div class="datacol noselect miestas" title="City">{{ d["city"] }}</div>
+                    <div class="datacol noselect ratings" title="Ranking Worldwide">{{ d["rankingWorldWide"] }}</div>
+                    <div class="datacol noselect" title="Cost of living">{{ d["costOfLiving"] }}</div>
+                    <div class="datacol noselect" title="Women/Man Ratio">{{ d["womenMenRation"] }}</div>
+                    <div class="datacol noselect" title="Languages">{{ d["languages"] }}</div>
+                    <div class="datacol noselect" title="Life Science">{{ d["subjectRanking"]["lifeScience"] }}</div>
+                    <div class="datacol noselect" title="Arts And Humanities">{{ d["subjectRanking"]["artsAndHumanities"] }}</div>
+                    <div class="datacol noselect" title="Engineering And Science">{{ d["subjectRanking"]["engineeringAndScience"] }}</div>
+                    <div class="datacol noselect" title="Physical Science">{{ d["subjectRanking"]["physicalSciene"] }}</div>
+                    <div class="datacol noselect" title="Social Science">{{ d["subjectRanking"]["socialScience"] }}</div>
+                    <div class="datacol noselect" title="Bussiness Economy">{{ d["subjectRanking"]["bussinessEconomy"] }}</div>
+                    <div class="datacol noselect" title="Computer Science">{{ d["subjectRanking"]["computerScience"] }}</div>
+                    <div class="datacol noselect" title="Law">{{ d["subjectRanking"]["law"] }}</div>
+                    <div class="datacol noselect" title="Education">{{ d["subjectRanking"]["education"] }}</div>
+                    <div class="datacol noselect" title="Psychology">{{ d["subjectRanking"]["psychology"] }}</div>
+                    <div class="datacol noselect" title="Clinical Preclinical Health">{{ d["subjectRanking"]["clinicalPreclinicalHealth"] }}</div>
+                </div>
+            </div>
+            <div class="walloffame col-3 p-0">
+                <div class="row m-0">
+                    <div class="col-12 walltit">Wall of fame</div>
+                    {% for i in d["wallOfFame"] %}
+                    <div class="col-12 person">
+                        <div class="name"><strong>{{ i }}</strong> </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+
+
+    <!-- Mobile version -->
+    <!-- Main page content -->
+    <div class="mobile-main-content">
+
+    </div>
+
+
+    <!-- News page content -->
+    <div class="mobile-news-content">
+
+    </div>
+
+</body>
+
+</html>
